@@ -12,14 +12,13 @@ int main( )
    ofstream out{"abc.bin",ios::binary};
    if(out)
    {
-	   out.write(reinterpret_cast(char*>(&a),sizeof(a));
-	   out.write(reinterpret_cast(char*>(&b),sizeof(b));
-	   out.write(reinterpret_cast(char*>(&c),sizeof(c));
-	   
+	   out.write(reinterpret_cast<char*>(&a), sizeof(a));
+	   out.write(reinterpret_cast<char*>(&b), sizeof(b));
+	   out.write(reinterpret_cast<char*>(&c), sizeof(c));
 	   out.close();
    }
    else
-    cout<<"Error: Could not open abc.txt"<<endl;
+    cout<<"Error: Could not open abc.bin"<<endl;
    
    return 0;
    
