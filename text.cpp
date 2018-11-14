@@ -9,7 +9,7 @@ int main( )
    float b = 68.123; 
    char c = 'J';
  
-   ofstream out{abc.txt};
+   ofstream out{"abc.txt"};
    if(out)
    {
 	   out<<a<<" ";
@@ -21,14 +21,6 @@ int main( )
    else
     cout<<"Error: Could not open abc.txt"<<endl;
    
-   
-   
-   
-   
-   //display data to console (i.e. as formatted chars)
-   //cout<<a<<" "<<b<<" "<<c;
-
-   //cout<<endl<<endl;
- 
    return 0;
-}
+   
+}//end main
